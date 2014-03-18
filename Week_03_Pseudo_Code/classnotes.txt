@@ -1,0 +1,39 @@
+http://xkcd.com/303/
+
+** review final project requirements
+*** discuss wireframes, when they're due, UX component
+
+** CSS positioning! 
+
+** Github review -- Kevin + Andrew
+
+** Developer Matchmaker
+
+
+Position Relative is with respect to itself, on an xy plane the origin is always the top left corner (where it wouldve been anyway) position absolute - it will be the window itself (if no container)
+
+if a parent has position relative, it means that the absolute position is going to be based on the position relative 
+
+position absolute is related to the body, unless it is nested within a container that has been assigned position relative
+
+also does everything a float does and more - allows you to fine tune things relative to the div exactly where you put them
+** thermostat -- psuedocode
+*** wtheck is psuedocode?
+*** Pseudo code for an application that would monitor the room temperature and adjust it so the room remains at a certain temperature.
+*** DEFINE: conditionals, loops, variables 
+
+** what can JS do?
+*** find fav site, pinpoint what aspects were JS and what is CSS/HTML
+*** ID the difference between JS functionality and markup functionality
+
+** color scheme -- http://codepen.io/nevan/pen/kBItz
+*** read code
+*** understand JS flow
+*** event listener -> function -> action
+
+** Rock, Paper, Scissors 
+** DIY
+
+** Traffic lights -- http://codepen.io/nevan/pen/shtLA
+*** DIY
+*** The yellow button changes the bulb to purple and the green light does not work. Students are to change the code so that the traffic light works correctly.

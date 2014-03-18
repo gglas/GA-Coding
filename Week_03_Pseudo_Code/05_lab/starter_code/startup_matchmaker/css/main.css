@@ -1,0 +1,86 @@
+.topnav {
+	margin: auto;
+}
+.page-header {
+	background-color: black;
+	border-bottom: 5px solid yellow;
+	overflow: hidden;
+}
+.page-header h1 {
+	color: white;
+	float: left;
+	margin: 20px;
+}
+.page-header nav {
+	float: right;
+}
+.page-header nav li {
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+.border_box p {
+	background-color: gray;
+	padding: 20px;
+	text-align: center;
+}
+.midpage {
+	position:relative;
+	background: url(../images/coworking.jpg);
+	background-size: cover;
+	height: 360px;
+}
+.textbox {
+	width: 200px;
+	background-color: gray;
+	opacity: .9;
+	float: right;
+	margin: 5%;
+	padding: 15px;
+	border: 1px solid;
+	border-radius: 2px;
+}
+.textbox h2 {
+	margin: 10px;
+}
+.textbox p {
+	margin: 10px;
+}
+.textbox a {
+	display:block;
+	padding: 10px;
+	background-color: yellow;
+	text-align: center;
+	padding-bottom: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+.column_container {
+	overflow: hidden;
+}
+.column {
+	position:relative;
+	display: block;
+	border: 1px solid black;
+	height: 300px;
+	width: 32%;
+	float: left;
+	padding: 6px;
+	line-height: 2em;
+}
+.column a {
+	display:block;
+	padding: 10px;
+	background-color: gray;
+	text-align: center;
+	padding-bottom: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	top: 30px;
+}
+footer {
+	overflow: hidden;
+	background-color: black;
+	padding: 20px;
+	color: white;
+}

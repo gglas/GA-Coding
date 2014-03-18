@@ -1,0 +1,45 @@
+* Sync tool: http://www.taqquikarim.com/resync/
+* officehours: fewd.us/officehours
+
+* TONIGHT: office hours/hackathon
+
+* real quick, relative paths review
+** relative_paths_review
+
+* Wendy G. Bite, Box Model edition
+** reset.css
+** introduce the box model
+*** http://www.w3schools.com/css/css_boxmodel.asp
+** code with layouts in mind
+** css transitions?
+
+* Nested selectors exercise
+** find the item and change property
+** google is your friend
+
+* Fashion blog! Build it, yo
+** discuss the structure as a class
+** <SECTION>: http://html5doctor.com/the-section-element/
+** <ARTICLE>: http://html5doctor.com/the-article-element/
+** difference between section, article, div: http://boblet.tumblr.com/post/130610820/html5-structure1
+** new html elements: http://www.w3schools.com/html/html5_new_elements.asp
+
+* FLOATS: how do they work?
+** http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
+* document flow removal - floats pull an item out of the docuemnt flow
+** http://codepen.io/mottaquikarim/tag/floats
+
+overflow - css hack - overflow:hidden forces the container div to recognize floated divs within it.  this is the easiest, crappiest way to make it work
+
+another way to keep the container div the right size is to add a div, and then set that div's parameters to "clear:both" = taqui has never used clears, it is basically the anti-float, use libraries that have float and clear already set
+
+third way is to use the clearfix class - this would give you a container with stuff floated doing what overflow does without overflow - save clearfix as a macro
+
+* Fashion Blog 2
+** start off by identifying bits and pieces of it
+
+* LOL jk, we're goin rogue. 
+** let's build a home page for ourselves
+** I like this: http://themes.designova.net/?theme=dignity and this: http://designova.net/dignity/index03.html and this: https://dev.twitter.com/docs/cards/types/player-card
+
+* CSS icons library + github

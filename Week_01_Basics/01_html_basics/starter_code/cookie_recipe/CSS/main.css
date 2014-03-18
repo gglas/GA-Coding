@@ -1,0 +1,14 @@
+	#total_time.total_time_class {
+		color: red;
+
+	}
+
+	.total_time_class { 
+		color: green;
+		text-decoration: underline;
+			}
+	#total_time{
+		color: blue;
+			}
+
+<!-- period targets class, hashtag targets ID -->

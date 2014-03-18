@@ -1,0 +1,33 @@
+/* YOU ARE IN: yesornoweatherapi/css/styles.css */
+
+#container {
+	margin: 0 auto;
+	width: 970px;
+
+}
+
+.outsideTemp {
+	color: purple;
+	font-size: 100px;
+	-webkit-animation: myfirst .5s infinite;
+	text-align: center;
+	background-image:url('http://stwww.bikemag.com/wp-content/uploads/2008/02/malibu_gladiator.jpg');
+	background-color:#cccccc;
+	height: 347px; 
+}
+
+.insideTemp {
+	font-size: 200px;
+	text-align: center;
+
+}
+
+.notTemp {
+	visibility: hidden;
+}
+
+@-webkit-keyframes myfirst 
+{
+	from {color: purple;}
+	to {color: white;}
+}

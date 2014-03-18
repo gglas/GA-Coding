@@ -1,0 +1,39 @@
+/* YOU ARE IN: ajax_project/css/styles.css */
+
+#container {
+
+}
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.no_show {
+	display: none;
+}
+
+.panorama_mode {
+	display: block;
+}
+
+.panorama {
+	width: 300px;
+	height: 300px;
+}
+/*
+.daytime {
+	background-image: url(../images/daytime.jpg);
+}
+
+.nighttime {
+	background-image: url(../images/nighttime.jpg);
+}
+
+.my_slider {
+	width: 500px;
+	height: 500px;
+}
+
+.bx-viewport {
+	width: 500px !important
+}*/

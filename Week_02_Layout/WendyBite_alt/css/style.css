@@ -1,0 +1,63 @@
+/* practice your commenting biznitch */
+/*commmmmmenettttss hi cmd+forward slash*/
+body {
+	background-color: #ccc; 
+}
+/*hexadecimal codes are fantastic 
+few different ways can also do rgb ( 135, 0 , 87) a
+nd each of those is an RGB value, also have 
+rgba which is red, green blue, opacity*/
+.container {
+	width: 960px;
+	border: 5px solid #777;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+/*don't assign a height, let the content drive the height of the container*/
+
+/*centering a block item is difficult, you need to give it a specific width and then need to center using the margins*/
+
+/*margin - 0 means set the top and bottom to zero pixels and auto means automatically set the left and right margin, if you give the width of the div, it will do the math and make sure that the left and right margins are equal, there is no vertical equivalent, css doesn't care bout height the content drives the height*/
+
+/*Padding vs Margin - practical way, margin is always spacing in between two html elements, if you have two divs and put margin in between theyll go further apart - padding is the space between the element and whatever is contained within that element - padding will also increase the dimensions of the div*/
+.container h1 {
+	text-align: center;
+	color: white;
+	font-style: italic;
+	font-size: 52px;
+}
+/*you can target the container class, and then it will look for tags within that class*/
+
+nav {
+	text-align: center;
+	padding: 20px 0px;
+}
+/*block elements will always take the entire line that theyre on*/
+
+.top-nav {
+	color: #0C9;
+	font-weight: bold;
+	font-size: 22px;
+	-webkit-transition: color 1.5s;
+}
+
+/*transitions only kick in if you change the css state, with transitions you declare the transition and as soon as the css state has changed the transition kicks into play
+
+the time interval will look at the transition, doesn't kick in until you change the css state, we told the system to change in a certain time interval*/
+
+.top-nav.active-link {
+	color: white;
+	text-decoration: none;
+}
+
+.top-nav.active-link.first-link {
+	border-right:1px solid white;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+/*if you do a.topnav without a space it's going to tie them together*/
+
+.top-nav:hover {
+	color: red;
+}

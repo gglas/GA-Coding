@@ -1,0 +1,35 @@
+**Office Hours - set in stone, ta
+anything with persistent data is not front end
+front end lives in the browser, no interaction outside of the browser
+static - the stuff typed in is what gets spit out
+front end is thematic and static**
+
+** FTP
+typically all files on the internet have "index.html"
+all sites have one folder for css and one for javascript and one more for images
+css
+js
+images
+
+HTMl keeps track of things using tags
+
+always open and close tags at the same time
+
+headings always have some padding inherently, it varies from computer to computer
+
+div is a generic wrapper for HTML content
+span is a generic wrapper for text
+
+block elements vs inline elements- 
+Block elements are forced to go to a new line - block elements have a concept of dimension, they have height and width
+span, which is for text, doesn't receive height or width, they are meant to be text
+
+Ex. if you put a bunch of inline elements they'll show up next to each other, whereas block elements would show up on top of each other
+
+self closing tags
+img is a major example
+you can use absolute URLS or relative URLs
+example, placekitten.com
+always put a space between attribute and tag name
+
+Don't insert a block element into an in-line element, for example, a div into a span

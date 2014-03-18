@@ -1,0 +1,84 @@
+/* YOU ARE IN: card_game_homework/css/styles.css */
+
+/*container elements*/
+#container {
+
+}
+
+.card_wrapper {
+	height: 464px;
+	width: 563px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.card {
+	height: 96px;
+	width: 71px;
+	margin: 10px;
+	float: left;
+	background-color: yellow;
+	background-image: url('../images/back-of-card.png');
+	background-repeat: no-repeat;
+}
+
+/*state elements*/
+
+.flipped {
+	background-image: url('../images/classic-playing-cards.png');	
+}
+
+/*cards - add -74px to previous and subtract one (for x card) */
+
+.c-1 {
+	background-position: -1px -1px;
+}
+
+.c-2 {
+	background-position: -74px -1px;
+}
+
+.c-3 {
+	background-position: -147px -1px;
+}
+
+.c-4 {
+	background-position: -220px -1px;
+}
+
+.c-5 {
+	background-position: -293px -1px;
+}
+
+.c-6 {
+	background-position: -366px -1px;
+
+}
+
+.c-7 {
+	background-position: -439px -1px;
+}
+
+.c-8 {
+	background-position: -512px -1px;
+}
+
+.c-9 {
+	background-position: -585px -1px;
+}
+
+.c-10 {
+	background-position: -658px -1px;
+}
+
+.c-11 {
+	background-position: -731px -1px;
+}
+
+.c-12 {
+	background-position: -804px -1px;
+}
+
+.c-13 {
+	background-position: -877px -1px;
+}

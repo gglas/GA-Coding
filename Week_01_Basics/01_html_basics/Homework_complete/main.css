@@ -1,0 +1,82 @@
+a:link {
+	color: #40E0D0;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body {
+	font-family: "Georgia", Times, sans-serif;
+	background-color: #484848;
+	color: #DCDCDC;
+	border: solid;
+	word-wrap:normal;
+	padding: 50px;
+	border: 5px solid #787878;
+	margin 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	line-height: 150%;
+	font-weight: 300;
+}
+.Name_Title {
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+}
+.Links {
+	font-weight: bold;
+	text-align: center;
+}
+.picture{
+	float:right;
+	border: 2px inset gray;
+	padding-top: 6px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.body {
+	text-align: left;
+	padding-right: 10px;
+}
+.menu_li {
+	display: inline;
+	margin-left: 25px;
+	padding-left: 25px;
+	align: center;
+}
+.linkbar {
+	text-align:center;
+	font-weight: bold;
+	font-family: "Arial";
+}
+.Experience_Title {
+	font-family: "Verdana", sans-serif;
+	font-variant: small-caps;
+	font-size: 25px;
+	letter-spacing: 3px;
+	color: gray;
+}
+.Section_Title {
+	font-weight:bold;
+	color: #FFFFFF;
+}
+.Company {
+	color: #FFFFFF;
+}
+.resume_body_text {
+	color: gray;
+	line-height: 1px;
+	font-family: "Georgia";
+	word-wrap: normal;
+}
+.date {
+	font-size: 13px;
+	font-variant: small-caps;
+	color: gray;
+}
+.resume_title {
+	font-family: "Arial";
+	font-weight: bold;
+}

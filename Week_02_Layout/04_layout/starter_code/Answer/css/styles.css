@@ -1,0 +1,84 @@
+/* YOU ARE IN: Answer/css/styles.css */
+.container {
+	width: 960px;
+	margin: 50px auto;
+	background: white;
+}
+/*960 pixels is the base structure, we can't trust the body and this will give us the layout that we need, no matter how big or small the browser window is we're in good shape*/
+
+/*Header Styles*/
+
+header {
+	width: 960px;
+	background-color: pink;
+}
+.Title {
+	display: inline-block;
+	color: red;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+}
+.Tagline {
+	display: inline-block;
+	color: gray;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding-right: 30px;
+}
+
+.top-nav {
+	overflow: hidden;
+}
+.Link_Button {	
+	width: 117.5px;
+	border: 1px solid white;
+	background-color: black;
+	float: left;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 20px;
+}
+a.Link_Button:link {
+	color: white;
+}
+.Blog_Column {
+	width: 630px;
+	float: left;
+	padding: 20px;
+}
+.Date {
+	font-family: "Trebuchet MS";
+	font-size: 32px;
+	color: gray;
+}
+.Article_Title {
+	font-family: "Trebuchet MS";
+	font-size: 32px;
+	color: gray;
+}
+.next_article {
+	float: right;
+	margin-top: 5px;
+}
+.Article:first-letter {
+	font-size: 70px;
+	color: gray;
+	float: left;
+	padding-right: 20px;
+}
+.Article {
+	margin-bottom:20px;
+}
+.Sidebar_Column {
+	width: 291px;
+	float: left;
+}
+.feet {
+	clear: both;
+	width: 100%;
+}
+.Blog_Images {
+	height: 200px;
+	width: 630px;
+	margin: 10px;
+}

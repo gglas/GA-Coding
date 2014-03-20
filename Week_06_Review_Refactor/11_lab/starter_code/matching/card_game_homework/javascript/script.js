@@ -9,16 +9,19 @@
 ( function() { //protect the lemmings
 
 
-var noClickCard = $( ".card" )
+var cardId = div.attr('class')
 
+function unflippedClick() {
+		if (cardId.hasClass( "flipped" ) ) {
+			alert( "you already flipped that card" );
+		}
 
-function cardflip()
-	if  {};
-noClickCard.click(
-		, if (class==card) {
-			noClickCard.addClass( ".flipped")
-		};
+		else {
+			cardId.addClass("flipped");
+		}
 
+}
 
+cardId.click(unflippedClick())
 
 })()

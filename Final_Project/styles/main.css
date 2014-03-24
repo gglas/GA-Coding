@@ -1,0 +1,46 @@
+/* CURRENTLY IN: styles/main.css */
+
+/*fixing navbar margin*/
+.navbar.navbar-default {
+	margin-bottom: 0px;
+}
+
+/* html */
+
+html {
+	min-height: 100%;
+}
+
+/*body*/
+
+body {
+	min-height: 100%;
+}
+
+/*background image div*/
+.image_wrapper {
+	background-image: url( "../images/new-york-new-york.jpeg" );
+	float: left;
+	background-size: cover;
+	background-position: 0% 30%;
+	min-height: 100%;
+}
+
+/*Entry Form Div*/
+
+.jumbotron.entry {
+	text-align: center;
+	width: 33%;
+	margin: 0 auto;
+	margin-top: 40px;
+	border-radius: 20px;
+	opacity: .9;
+}
+
+/*Form Fields*/
+
+.form-group,
+.label,
+.btn {
+	opacity: 1;
+}

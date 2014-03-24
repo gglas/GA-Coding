@@ -9,19 +9,33 @@
 ( function() { //protect the lemmings
 
 
-var cardId = div.attr('class')
 
-function unflippedClick() {
-		if (cardId.hasClass( "flipped" ) ) {
+
+
+var clickedDiv = $( 'div' );
+
+clickedDiv.onclick=grabClass();
+
+console.log()
+
+function grabClass ( clickedDiv ) {
+	var divClass =  clickedDiv.attr( 'class')
+	return divClass
+	console.log()
+}
+
+
+function unflippedClick( e ) {
+		var $clicked = $(this);
+		if (clickedDiv.hasClass( "flipped" ) ) {
 			alert( "you already flipped that card" );
 		}
 
 		else {
-			cardId.addClass("flipped");
+			clickedDiv.addClass("flipped");
 		}
 
 }
 
-cardId.click(unflippedClick())
 
 })()

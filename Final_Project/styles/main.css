@@ -8,22 +8,20 @@
 /* html */
 
 html {
-	min-height: 100%;
+	background-image: url( "../images/new-york-new-york.jpeg");
+	background-size: cover;
+	background-position: 0% 30%;
 }
 
 /*body*/
 
-body {
-	min-height: 100%;
-}
-
 /*background image div*/
+
 .image_wrapper {
-	background-image: url( "../images/new-york-new-york.jpeg" );
-	float: left;
+	background-image: url( "../images/new-york-new-york.jpeg");
 	background-size: cover;
 	background-position: 0% 30%;
-	min-height: 100%;
+	float: left;
 }
 
 /*Entry Form Div*/
@@ -32,7 +30,7 @@ body {
 	text-align: center;
 	width: 33%;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 5%;
 	border-radius: 20px;
 	opacity: .9;
 }
@@ -42,5 +40,5 @@ body {
 .form-group,
 .label,
 .btn {
-	opacity: 1;
+	opacity: 1.0;
 }

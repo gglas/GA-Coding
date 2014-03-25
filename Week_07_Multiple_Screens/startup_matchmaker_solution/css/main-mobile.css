@@ -1,0 +1,29 @@
+@media (max-width: 480px) {
+
+#page-header nav {
+	display: none;
+}
+
+.tagline {
+	display: none;
+}
+
+.blurb {
+	width: 60%;
+}
+.blurb .web_only_text {
+	display: none;
+}
+
+.tout {
+	width: 100%;
+	padding-right: 5%;
+	float: none;
+}
+
+.tout .button {
+	width: 80%;
+	margin: 10px auto;
+}
+
+} /* end of media state */

@@ -1,0 +1,95 @@
+/* CURRENTLY IN: styles/main.css */
+
+
+/*container*/
+
+.wrapper {
+	margin: 0 auto;
+	background-color: pink;
+	padding: 20px 20px;
+}
+
+/*top nav*/
+
+.nav_row {
+	width: 102%;
+	margin-left: -10px;
+	border: 1px solid black;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+nav ul {
+	height: 100%;
+}
+nav li {
+	width: 10%;
+	height: 100%;
+	border: 2px solid black;
+	float: left;
+	margin: 2px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+nav .menu_box {
+	width: 13%;
+	height: 100%;
+	border: 1px solid black;
+	float: right;
+	margin: 2px;
+}
+
+nav .menu_box ul {
+	margin: 0 auto;
+}
+
+/*row 1*/
+
+.row {
+	width: 100%;
+	border: 3px solid black;
+	height: 100px;
+	margin: 10px auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+/*row 2*/
+
+.row_2_box {
+	width: 20%;
+	background-color: yellow;
+	float: left;
+	height: 100%;
+	margin-right: 6.6666%;
+}
+
+.row_2_box_last {
+	margin-right: 0;
+}
+
+
+.box {
+	height: 100px;
+	border: 2px solid black;
+}
+
+/*  MOBILE OVERRIDES */
+@media (max-width: 768px) {
+	body {
+		background-color: red;
+	}
+}
+
+@media all (max-width: 480px) {
+	
+}
+/* 
+
+IF STATEMENT {
+	a lot of rules
+}
+
+*/

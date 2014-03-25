@@ -12,13 +12,17 @@
 var noClickCard = $( ".card" )
 
 
-function cardflip()
-	if  {};
-noClickCard.click(
-		, if (class==card) {
-			noClickCard.addClass( ".flipped")
-		};
+function cardflip( e ) {
+	var clickedCard = $( 'this' );
+	if (clickedCard.hasClass('flipped')) {
+		alert( 'you already clicked here')
+	};
+	else {
+	clickedCard.addClass('flipped')
+	}
+}
 
 
+clickedCard.click(cardFlip())
 
 })()

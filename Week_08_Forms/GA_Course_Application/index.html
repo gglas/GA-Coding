@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!--
+  Details:
+
+    * Background image is 2x
+
+  Bonus points for:
+
+    * Restrict the length of the state field to two characters
+    * Restrict the length of the postal code field to five characters
+-->
+
+<html>
+  <head>
+    <title>Forms v1</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" media="all">
+    <meta name="viewport" content="width=702">
+  </head>
+  <body>
+    <h1>Course Application</h1>
+    <form>
+      <fieldset class="Contact">
+        <legend>Your Contact Info</legend>
+          <div class="form-row name-fields">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="First" class="name-fields">
+            <input id="name" type="text" placeholder="Last" class="name-fields">
+          </div>
+          <div class="form-row">
+            <label for="phone_number" type="text" placeholder="Phone Number">Phone Number</label>
+            <input id="p_number" type="text" class="phone"><span> &mdash;</span>
+            <input id="p_number" type="text" class="phone"><span> &mdash;</span>
+            <input id="p_number" type="text" class="phone">
+          </div>
+          <div class="form-row address-fields">
+            <label for="address" type="text" placeholder="Street Address">Address</label>
+              <input id="Street_Address" type="text" placeholder="Street Address" class="address-street-address">
+              <input id="Address_line_2" type="text" placeholder="Address Line 2" class="address-line-2">
+              <input id="Address_City" type="text" placeholder="City" class="address-city">
+              <input id="Address_state" type="text" placeholder="State" class="address-state">
+              <input id="Address_Postal" type="text" placeholder="Postal Code" class="address-postal-code">
+          </div>
+      </fieldset>
+      <fieldset class="Skills_Interests">
+        <legend>Skills &amp; Interests</legend>
+          <div class="form-row">
+            <label for="courses">Course</label>
+              <select id="courses">
+                <optgroup label="Web Development">
+                  <option value="1">FEWD</option>
+                  <option value="2">BEWD</option>
+                  <option value-"0" selected>Select Course</option>
+                </optgroup> 
+                <optgroup label="Web Development">
+                  <option value="1a">None</option>
+                </optgroup> 
+              </select>
+          </div>
+          <div class="form-row">
+            <label for="Experience">Past Experience</label>
+            <textarea></textarea>
+          </div>
+      </fieldset>
+      <fieldset class="OtherStuff">
+        <legend>Anything Else?</legend>
+          <div class="form-row">
+              <label for="referral">Referral</label>
+              <select>
+                <optgroup label="Web Development">
+                  <option value="1">FEWD</option>
+                  <option value="2">BEWD</option>
+                  <option value-"0" selected>Select Course</option>
+                </optgroup> 
+                <optgroup label="Web Development">
+                  <option value="1a">None</option>
+                </optgroup> 
+              </select>
+          </div>
+          <div class="form-row">
+              <label for="Comments">Comments</label>
+              <textarea></textarea>
+          </div>
+          <div class="buttons">
+            <button type="button">Save Draft</button>
+            <button type="button">Submit</button>
+          </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

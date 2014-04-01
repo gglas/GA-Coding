@@ -9,9 +9,9 @@
 ( function() { //protect the lemmings
 
 
-var noClickCard = $( ".card" )
 
 
+<<<<<<< HEAD
 function cardflip( e ) {
 	var clickedCard = $( 'this' );
 	if (clickedCard.hasClass('flipped')) {
@@ -24,5 +24,33 @@ function cardflip( e ) {
 
 
 clickedCard.click(cardFlip())
+=======
+
+var clickedDiv = $( 'div' );
+
+clickedDiv.onclick=grabClass();
+
+console.log()
+
+function grabClass ( clickedDiv ) {
+	var divClass =  clickedDiv.attr( 'class')
+	return divClass
+	console.log()
+}
+
+
+function unflippedClick( e ) {
+		var $clicked = $(this);
+		if (clickedDiv.hasClass( "flipped" ) ) {
+			alert( "you already flipped that card" );
+		}
+
+		else {
+			clickedDiv.addClass("flipped");
+		}
+
+}
+
+>>>>>>> FETCH_HEAD
 
 })()

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title >ToDoList_ClassWork</title>
+    <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootswatch/3.1.1/amelia/bootstrap.min.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body>
+		<div class="col-lg-4">
+            <div class="well bs-component">
+              <form class="form-horizontal todo-list">
+                <fieldset>
+                  <legend>Task Manager</legend>
+                  <div class="form-group">
+                  <label class="control-label">Task</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="my-task" placeholder="Do something damnit...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Add Task</button>
+                    </span>
+                  </div>
+                </div>
+                </fieldset>
+              </form>
+          </div>
+          <div class="col-lg-8">
+            <div class="well bs-component">
+                <h2>Things ToDo:</h2>
+                	<div class="list-group tasks">
+                		<div class="list-group-item">Hellow Wrold
+                		<span class="glyphicon glyphicon-pencil float-right"></span>
+                		 <button type="button" class="close">x</button>
+                		</div>
+					</div>
+          	</div>
+         </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='javascript/main.js'></script>
+</body>
+</html>

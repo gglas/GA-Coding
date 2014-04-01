@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title >Forms_ClassWork</title>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body>
+	<div class="col-lg-6">
+            <div class="well bs-component">
+              <form class="form-horizontal weather-req" data-parsley-validate>
+              	<!-- action="http://api.openweathermap.org/data/2.5/weather" method="GET" Action is where you submit the URL of the API, Get is the method you use for it - use POST for secure (passwords, etc) -->
+                <fieldset>
+                  <legend>Choose a city...</legend>
+                  <div class="form-group">
+				      <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+				      <div class="col-lg-10">
+				        <input type="text" class="form-control" id="inputEmail" placeholder="Enter your name..." required>
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+				      <div class="col-lg-10">
+				        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-parsley-trigger="keypress" data-parsley-type="email">
+				      </div>
+				   </div>
+				   <div class="form-group">
+				   	<label for="male">Choose Gender</label>
+                  <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Selects</label>
+                    <div class="col-lg-10">
+                      <select name="q" class="form-control" id="select">
+                      <!-- Name defines where the value will be pushed to, value is the value you are going to add to the querystring -->
+                      	<option value="" selected>Choose a city</option>
+                      	<option value="chicago, us">Chicago</option>
+                      	<option value="las vegas, us">Las Vegas</option>
+                      	<option value="newyork, us">New York</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+          </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <script src="javascript/parsley.min.js"></script>
+    <script src='javascript/main.js'></script>
+</body>
+</html>

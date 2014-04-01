@@ -1,0 +1,11 @@
+/* CURRENTLY IN: styles/main.css */
+.task-complete {
+	text-decoration: line-through;
+	color: #ffffff;
+	background-color: green;
+}
+
+.float-right {
+	position: absolute;
+	padding-right: 30px;
+}

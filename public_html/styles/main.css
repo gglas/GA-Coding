@@ -18,12 +18,6 @@ html {
 
 /*background image div*/
 
-.image_wrapper {
-	background-image: url( "../images/new-york-new-york.jpeg");
-	background-size: cover;
-	background-position: 0% 30%;
-	float: left;
-}
 
 /*Entry Form Div*/
 
@@ -54,4 +48,11 @@ html {
 
 .tableCell {
 	display: block;
+}
+
+.section {
+	background-image: url("../images/new-york-new-york.jpeg");
+	background-size: cover;
+	background-position: 0% 30%;
+	float: left;
 }

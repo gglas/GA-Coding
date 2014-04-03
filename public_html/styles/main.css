@@ -31,7 +31,7 @@ html {
 	text-align: center;
 	width: 33%;
 	margin: 0 auto;
-	margin-top: 5%;
+	margin-top: 10%;
 	border-radius: 20px;
 	opacity: .9;
 	margin-bottom: 5%;
@@ -50,4 +50,8 @@ html {
 .jumbotron.entry.about {
 	font-size: 12px;
 	width: 50%;
+}
+
+.tableCell {
+	display: block;
 }

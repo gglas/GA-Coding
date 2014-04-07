@@ -1,0 +1,25 @@
+/* CURRENTLY IN: styles/main.css */
+.jumbotron {
+	text-align: center;	
+}
+
+html { 
+	height: 100% 
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0 
+}
+      
+#map-canvas { height: 100% }
+
+#image-holder {
+	text-align: center;
+}
+
+#refresh-button {
+	text-align: center;
+	overflow: hidden;
+}

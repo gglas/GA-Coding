@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title >APIs</title>
+    <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body>
+    <!-- 
+		Instagram API
+    	maybe get masonry working on this?
+    	https://api.instagram.com/v1/media/popular?client_id=[CLIENT_ID]
+    	http://instagram.com/developer/
+    	http://instagram.com/developer/endpoints/tags/
+    -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <script src='javascript/main.js'></script>
+    <script>
+    (function(){
+    	var body = $( 'body' );
+    	$.get('https://api.instagram.com/v1/media/popular?client_id=[CLIENT_ID]', function(data) {
+    			console.log( data );
+    			$.each( data.data, function( idx, el ){
+    				var img = $( '<img/>' );
+    				img.attr( 'src', el.images.standard_resolution.url );
+    				body.append( img );
+    			});
+    	}, 'jsonp')
+    })();
+    </script>
+</body>
+</html>

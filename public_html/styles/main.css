@@ -12,9 +12,16 @@ html {
 	background-image: url( "../images/new-york-new-york.jpeg");
 	background-size: cover;
 	background-position: 0% 30%;
+	height: 100%;
 }
 	
 /*body*/
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
 /*background image div*/
 
@@ -55,4 +62,9 @@ html {
 	background-size: cover;
 	background-position: 0% 30%;
 	float: left;
+}
+
+/* google maps div (map div) */
+#map-canvas { 
+	height: 100% 
 }

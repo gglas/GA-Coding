@@ -28,14 +28,15 @@ var geocoder;
       		var myLat = results[0].geometry.location.A; // set latitude variable
       		var myLong = results[0].geometry.location.k; // set longitude variable
       		var latLong = myLat+','+myLong;
-      		console.log( latLong );
       		})
       	if (status == google.maps.GeocoderStatus.OK) {
 	      		// check google maps API query status
-	      		// if status is OK query factual API
-	      		function queryFactual( fullCoord ) {
-				var url = 'http://api.v3.factual.com/t/restaurants-us?q=taco&geo={"$circle":{"$center":'+ latLong +',"$meters": 1000}}&offset=0&limit=3&include_count=false&sort=placerank:desc'
-	      		}
+	      		// if status is OK post the latlong to server
+	      		$_POST(
+	      			"../phpStruct/api/geoClosestRests/index.php"
+	      			,{ latLongValue : latLong }
+	      		);
+
 	   //    		// parse factual API results into ingestible variables
 
 
@@ -50,7 +51,7 @@ var geocoder;
 
 
 	   //    		// switch to slide 2
-	   //    	}
+	      	}
 	   //    		// if bad google API response, display error div
 	   //    	else {
 	   //    		$( '.form-control' ).removeAttr( 'id','focusedInput' );

@@ -2,8 +2,8 @@
 
 // if you need post content
 
-$lat = $_GET[ 'latValue' ];
-$long = $_GET[ 'longValue' ];
+$lat = $_GET[ 'lat' ];
+$long = $_GET[ 'long' ];
 
 require_once('factual/Factual.php');
 

@@ -1,25 +1,14 @@
-/* CURRENTLY IN: javascript/main.js */
-
-(function(){ //protect the pizza!
+(function(){
 
 
-// activate pages function 
-	$(document).ready(function() {
-		$.fn.fullpage();
-		});
+// activate pages function
+$(document).ready(function() {
+    $.fn.fullpage();
+    //execute fullpage javascript
 
-
-var submitBtn = $( '#submit_btn' );
-// pull in submit button
-	
-// define google maps geocoding  (from google maps API)
-var geocoder;
-
-// define geocoder variable
-      
-
-
-      function initialize() {
+    $( '#submit_btn' ).click(function(){
+   //define submit button click handler
+  function initialize() {
       	geocoder = new google.maps.Geocoder();
       	var userAddress = $( ".form-control" ).val();
 		// set address equal to address put into form
@@ -27,45 +16,21 @@ var geocoder;
       		function(results, status) {
       		var myLat = results[0].geometry.location.A; // set latitude variable
       		var myLong = results[0].geometry.location.k; // set longitude variable
-      		var latLong = myLat+','+myLong;
       		})
-      	if (status == google.maps.GeocoderStatus.OK) {
-	      		// check google maps API query status
-	      		// if status is OK post the latlong to server
-	      		$_POST(
-	      			"../phpStruct/api/geoClosestRests/index.php"
-	      			,{ latLongValue : latLong }
-	      		);
+      		console.log( myLat );
+  //   	$.GET(
+		// 	"../php/api/index.php"
+		// 	,{ latValue : myLat }
+		// 	,{ longValue : myLong }
+		// 	, function( data ) {
+		// 		$(".result").html(data);
+		// 	}
+		// )
+    	
+    		};
+    	})
 
-	   //    		// parse factual API results into ingestible variables
+	})
 
-
-
-
-
-
-	   //    		// add into proper div in slide 2 + style
-
-
-
-
-
-	   //    		// switch to slide 2
-	      	}
-	   //    		// if bad google API response, display error div
-	   //    	else {
-	   //    		$( '.form-control' ).removeAttr( 'id','focusedInput' );
-	   //    		$( '.form-control' ).attr('id','input-error');
-	   //    		$( '.form-group' ).addClass( 'has-error' );
-
-	      			
-
-	   //    	}
-      	};
-
-
-submitBtn.on(
-		'click'
-		,initialize
-	);
+// Close off the anonymous function and execute it
 })();

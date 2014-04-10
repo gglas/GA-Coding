@@ -1,5 +1,4 @@
 <?php
-
 /*  
 Plugin Name: Factual
 Description: Factual API Wordpress Plugin

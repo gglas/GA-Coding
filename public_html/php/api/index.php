@@ -13,7 +13,8 @@ $factual = new Factual("0i3snM8LWXa9utoqmFpv5djhUacGNwkakRWya4dG", "y87fwqqKR1Bs
 $query = new FactualQuery;
 $query->within(new FactualCircle($lat, $long, 2000));
 $query->search('tacos');
-$query->limit(10);
+$query->limit(3);
+$query->sortAsc("\$distance");
 
 // lets execute/run the query
 $res = $factual->fetch("places", $query);

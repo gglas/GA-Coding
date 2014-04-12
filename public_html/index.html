@@ -41,11 +41,16 @@
 </header>
 <body>
 		<div class="slide" data-anchor="slide1">
-				<div class="jumbotron entry"><h1>You are Searching for Tacos</h1>
+				<div class="jumbotron entry input-field col-lg-4"><h1>You are Searching for Tacos</h1>
 						<div class="form-group entry-div">
 						  <label class="control-label" for="focusedInput">Address (#, Street, Zip)</label>
+						  <div class="input-group col-lg-12 input-hide geolocate-button">
+						  	<span class="input-group-btn">
+							  	<button class="btn btn-default" type="button" id="geolocate_btn">Use My Location!</button>
+							  </span>
+						  </div>
 						  <div class="input-group">
-						  	<input type="text" class="form-control" id="focusedInput" value="Tell us where you are...">
+						  	<input type="text" class="form-control" id="focusedInput" placeholder="Tell us where you are...">
 							  <span class="input-group-btn">
 							  	<button class="btn btn-default toSlide" type="button" id="submit_btn" data-index="slide2">Submit</button>
 							  </span>
@@ -55,19 +60,27 @@
 				</div>
 	</div>
 	<div class="slide" data-anchor="slide2">
-				    <div class="jumbotron entry"><h1>You are Searching for Tacos</h1>
-						<div class="form-group entry-div">
-						  <label class="control-label" for="focusedInput">Address (#, Street, Zip)</label>
-						  <div class="input-group">
-						  	<input type="text" class="form-control" id="focusedInput" value="THAT WORKS BIZNITCH">
-							  <span class="input-group-btn">
-							  	<button class="btn btn-default toSlide" type="button" data-index="2">Submit</button>
-							  </span>
-							</input>
-						  </div>
-						</div>
-					</div>
-
+		<script type="foo/bar" id='resultsList'>
+			<%
+			// repeat items 
+			_.each(items.response.data,function(item,key,list){
+			  // create variables
+			%>
+			  	<div class="taco-row">
+			  		<h2> TACO JOINT NAME <h2>
+			  		<h4><%= item.name %>  <%= item.address %></h4>
+			  		<h3> DISTANCE (meters) <h3>
+			  		<h5><%= item.$distance %><h5>
+			  	</div>
+			<%
+			 });
+			%>
+			<div></div>
+		</script>
+	    <div class="jumbotron entry col-lg-4 tacoResults" id="tacoResults">
+	    	<h1>You are Searching for Tacos</h1>
+		</div>
+		<div class="jumbotron entry col-lg-4 map_results" id="map-canvas"></div>
 		</div>
 	
 		    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
@@ -78,7 +91,8 @@
 			<script type="text/javascript"
 		      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwnxhY2B4W5yLUccUV49-g4jZMIbkzhmA&sensor=false">
 		    </script>
-		    <script src='javascript/main.js'></script>
+		    <script src="javascript/underscore.min.js"></script>
+		    <script src='javascript/main-2.js'></script>
 		    <script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
